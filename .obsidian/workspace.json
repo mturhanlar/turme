@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "azure-ad-penetration-test/enumeration.md",
+                "file": "aws-penetration-test/enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "azure-ad-penetration-test/enumeration.md",
+                "file": "aws-penetration-test/enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "azure-ad-penetration-test/enumeration.md",
+                "file": "aws-penetration-test/enumeration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "azure-ad-penetration-test/enumeration.md"
+                "file": "aws-penetration-test/enumeration.md"
               }
             }
           }
@@ -138,10 +138,13 @@
   },
   "active": "bd0bef3ab6a56a3a",
   "lastOpenFiles": [
+    "SUMMARY.md",
+    "README (1).md",
+    "README.md",
+    "hackthebox-writeups.md",
+    "azure-ad-penetration-test/enumeration.md",
     "azure-ad-penetration-test/README.md",
     "azure-ad-penetration-test/privilege-escalation.md",
-    "azure-ad-penetration-test/enumeration.md",
-    "hackthebox-writeups.md",
     "aws-penetration-test.md",
     "azure-ad-penetration-test/lastpage.md",
     "azure-ad-penetration-test/intro.md"
