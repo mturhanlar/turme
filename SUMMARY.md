@@ -4,7 +4,7 @@
 * [Introduction](<README (1).md>)
 * [Azure AD Penetration Test](azure-ad-penetration-test/README.md)
   * [Intro](azure-ad-penetration-test/intro.md)
-  * [Initial Access](azure-ad-penetration-test/lastpage.md)
+  * [Initial Access](azure-ad-penetration-test/initial-access.md)
   * [Enumeration](azure-ad-penetration-test/enumeration.md)
   * [Privilege Escalation](azure-ad-penetration-test/privilege-escalation.md)
 * [AWS Penetration Test](aws-penetration-test/README.md)

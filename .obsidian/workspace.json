@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "aws-penetration-test/enumeration.md",
+                "file": "azure-ad-penetration-test/initial-access.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "aws-penetration-test/enumeration.md",
+                "file": "azure-ad-penetration-test/initial-access.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "aws-penetration-test/enumeration.md",
+                "file": "azure-ad-penetration-test/initial-access.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "aws-penetration-test/enumeration.md"
+                "file": "azure-ad-penetration-test/initial-access.md"
               }
             }
           }
@@ -139,14 +139,14 @@
   "active": "bd0bef3ab6a56a3a",
   "lastOpenFiles": [
     "SUMMARY.md",
+    "azure-ad-penetration-test/enumeration.md",
+    "aws-penetration-test/README.md",
+    "aws-penetration-test/privilege-escalation.md",
+    "aws-penetration-test/intro.md",
+    "aws-penetration-test/initial-access.md",
+    "aws-penetration-test/enumeration.md",
     "README (1).md",
     "README.md",
-    "hackthebox-writeups.md",
-    "azure-ad-penetration-test/enumeration.md",
-    "azure-ad-penetration-test/README.md",
-    "azure-ad-penetration-test/privilege-escalation.md",
-    "aws-penetration-test.md",
-    "azure-ad-penetration-test/lastpage.md",
-    "azure-ad-penetration-test/intro.md"
+    "hackthebox-writeups.md"
   ]
 }
