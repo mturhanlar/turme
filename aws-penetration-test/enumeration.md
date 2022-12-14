@@ -502,3 +502,68 @@ Get full information about a policy  
 ```
 aws kms get-key-policy --policy-name policy-name--key-id key-id
 ```
+
+
+# Pacu 
+
+```
+am__enum_users_roles_policies_groups
+```
+
+
+After that you can type 
+
+```
+data
+```
+
+in order to see the results. 
+
+
+For enumeration in databases
+
+```
+run dynamodb__enum
+```
+
+
+Here is the list of all Pacu modules in order to do enumeration 
+
+
+```
+[Category: ENUM]
+
+  inspector__get_reports
+  dynamodb__enum
+  apigateway__enum
+  iam__bruteforce_permissions
+  rds__enum_snapshots
+  cloudformation__download_data
+  iam__detect_honeytokens
+  iam__get_credential_report
+  systemsmanager__download_parameters
+  lambda__enum
+  iam__enum_permissions
+  rds__enum
+  route53__enum
+  acm__enum
+  enum__secrets
+  codebuild__enum
+  ec2__download_userdata
+  ecr__enum
+  aws__enum_account
+  ecs__enum_task_def
+  iam__enum_users_roles_policies_groups
+  aws__enum_spend
+  ebs__enum_volumes_snapshots
+  ec2__enum
+  glue__enum
+  eks__enum
+  guardduty__list_accounts
+  ecs__enum
+  ec2__check_termination_protection
+  transfer_family__enum
+  lightsail__enum
+  guardduty__list_findings
+```
+

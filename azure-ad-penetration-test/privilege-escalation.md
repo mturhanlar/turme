@@ -1,11 +1,10 @@
 # Privilege Escalation
 ## Privilege Escalation via Service Principals
 
-Learn every detail in that URL: 
-https://posts.specterops.io/azure-privilege-escalation-via-service-principal-abuse-210ae2be2a5
+Learn every detail in that URL:  
+[Privilege Escalation via Service Principals](https://posts.specterops.io/azure-privilege-escalation-via-service-principal-abuse-210ae2be2a5)
 
-
-The script below gives you ability to find AppAdmins and by getting AppAdmins you have posibility to take global admin privileges. 
+The script below gives you ability to find AppAdmins and by getting AppAdmins you have posibility to take global admin privileges. (Coppied from that page)
 
 ```
 # Install the AzureAD PowerShell module
