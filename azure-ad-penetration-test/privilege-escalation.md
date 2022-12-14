@@ -2,7 +2,7 @@
 ## Privilege Escalation via Service Principals
 
 Learn every detail in that URL:  
-[[Privilege Escalation via Service Principals]](https://posts.specterops.io/azure-privilege-escalation-via-service-principal-abuse-210ae2be2a5)
+[Privilege Escalation via Service Principals](https://posts.specterops.io/azure-privilege-escalation-via-service-principal-abuse-210ae2be2a5)
 
 The script below gives you ability to find AppAdmins and by getting AppAdmins you have posibility to take global admin privileges. (Coppied from that page)
 
@@ -46,4 +46,4 @@ $UserRoles | ?{$_.MemberType -eq "ServicePrincipal"}
 
 
 If you have dynamic groups Implementation, than it would be good to examine all groups constructor scripts. So with that examination you will ba able fjn
-https://www.mnemonic.io/resources/blog/abusing-dynamic-groups-in-azure-ad-for-privilege-escalation/
+[you should see that](https://www.mnemonic.io/resources/blog/abusing-dynamic-groups-in-azure-ad-for-privilege-escalation/)
