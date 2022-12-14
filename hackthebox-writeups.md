@@ -1,2 +1,3 @@
 # Hackthebox WriteUps
 
+try
