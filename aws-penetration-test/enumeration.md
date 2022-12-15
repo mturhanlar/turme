@@ -1,6 +1,8 @@
 # Enumeration
 
-## IAM Enumeration
+## Enumeration
+
+### IAM Enumeration
 
 (Should be authenticated)
 
@@ -10,19 +12,19 @@ List of IAM Users :
 aws iam list-users 
 ```
 
-List the IAM groups that the specified IAM user belongs to : 
+List the IAM groups that the specified IAM user belongs to :&#x20;
 
 ```
 aws iam list-groups-for-user --user-name user-name
 ```
 
-List all manages policies that are attached to the specified IAM user : 
+List all manages policies that are attached to the specified IAM user :&#x20;
 
 ```
 aws iam list-attached-user-policies --user-name user-name
 ```
 
-Lists the names of the inline policies embedded in the specified IAM user : 
+Lists the names of the inline policies embedded in the specified IAM user :&#x20;
 
 ```
 aws iam list-user-policies --user-name user-name
@@ -42,7 +44,7 @@ Lists all managed policies that are attached to the specified IAM Group :
 aws iam list-attached-group-policies --group-name group-name
 ```
 
-List the names of the inline policies embedded in the specified IAM Group: 
+List the names of the inline policies embedded in the specified IAM Group:&#x20;
 
 ```
 aws iam list-group-policies --group-name group-name
@@ -62,7 +64,7 @@ Lists all managed policies that are attached to the specified IAM role :
 aws iam list-attached-role-policies --role-name role-name
 ```
 
-List the names of the inline policies embedded in the specified IAM role : 
+List the names of the inline policies embedded in the specified IAM role :&#x20;
 
 ```
 aws iam list-role-policies --role-name role-name
@@ -76,19 +78,19 @@ List of IAM Policies :
 aws iam list-policies 
 ```
 
-Retrieves information about the specified managed policy : 
+Retrieves information about the specified managed policy :&#x20;
 
 ```
 aws iam get-policy --policy-arn policy-arn
 ```
 
-Lists information about the versions of the specified manages policy : 
+Lists information about the versions of the specified manages policy :&#x20;
 
 ```
 aws iam list-policy-versions --policy-arn policy-arn
 ```
 
-Retrieved information about the specified version of the specified managed policy : 
+Retrieved information about the specified version of the specified managed policy :&#x20;
 
 ```
 aws iam get-policy-version --policy-arn policy-arn --version-id version-id
@@ -108,9 +110,7 @@ aws iam get-group-policy --group-name group-name--policy-name policy-name
 aws iam get-role-policy --role-name role-name--policy-name policy-name
 ```
 
-
-
-## VPC Enumeration
+### VPC Enumeration
 
 Describe about VPCs :
 
@@ -118,33 +118,33 @@ Describe about VPCs :
 aws ec2 describe-vpcs
 ```
 
-Describe about Subnets : 
+Describe about Subnets :&#x20;
 
 ```
 aws ec2 describe-subnets
 ```
 
-Describe about Route Table  :
+Describe about Route Table  :
 
 ```
 aws ec2 describe-route-tables
 ```
 
-Describe about Network ACLs  :
+Describe about Network ACLs  :
 
 ```
 aws ec2 describe-network-acls
 ```
 
-## EC2 Enumeration
+### EC2 Enumeration
 
-Describes the Information  about all Instances 
+Describes the Information  about all Instances&#x20;
 
 ```
 aws ec2 describe-instances 
 ```
 
-Describes the Information  about Specified Instance 
+Describes the Information  about Specified Instance&#x20;
 
 ```
 aws ec2 describe-instances --instance-ids instance-id
@@ -156,60 +156,59 @@ Describes the Information about UserData Attribute of the specified Instance
 aws ec2 describe-instance-attribute –attribute userData --instance-id instance-id
 ```
 
-Describes the Information  about IAM instance profile associations 
+Describes the Information  about IAM instance profile associations&#x20;
 
 ```
 aws ec2 describe-iam-instance-profile-associations
 ```
 
-## EBS Enumeration
+### EBS Enumeration
 
-Describes the Information  about  EBS volumes 
+Describes the Information  about  EBS volumes&#x20;
 
 ```
 aws ec2 describe-volumes 
 ```
 
-Describes about all  the available EBS snapshots
+Describes about all  the available EBS snapshots
 
 ```
 aws ec2 describe-snapshots --owner-ids self
 ```
 
-
-## Lambda Enumeration
+### Lambda Enumeration
 
 During enumeration, we should do regions one by one because lambda functions region based. So if we enumerate without specifying the region it will look for the default region.
 
-### Lambda Function :
+#### Lambda Function :
 
-List of all the lambda functions  
+List of all the lambda functions &#x20;
 
 ```
 aws lambda list-functions
 ```
 
-Retrieves the Information about the specified lambda function   
+Retrieves the Information about the specified lambda function  &#x20;
 
 ```
 aws lambda get-function --function-name function-name
 ```
 
-Retrieves the policy Information about the specified lambda function 
+Retrieves the policy Information about the specified lambda function&#x20;
 
 ```
 aws lambda get-policy --function-name function-name
 ```
 
-Retrieves the event source mapping Information about the specified lambda function 
+Retrieves the event source mapping Information about the specified lambda function&#x20;
 
 ```
 aws lambda list-event-source-mappings --function-name function-name
 ```
 
-### API Gateway:
+#### API Gateway:
 
-List of all the Rest APIs 
+List of all the Rest APIs&#x20;
 
 ```
 aws apigateway get-rest-apis
@@ -233,69 +232,69 @@ Get information about the specified resource
 aws apigateway get-resource --rest-api-id ApiId --resource-id ResourceID
 ```
 
-Get the method information for the specified resource  
+Get the method information for the specified resource &#x20;
 
 ```
 aws apigateway get-method --rest-api-id ApiID--resource-id ResourceID--http-method Method
 ```
 
-List of all stages for a REST API 
+List of all stages for a REST API&#x20;
 
 ```
 aws apigateway get-stages --rest-api-id ApiId
 ```
 
-Get the information about the specified API's stage 
+Get the information about the specified API's stage&#x20;
 
 ```
 aws apigateway get-stage --rest-api-id ApiId--stage-name StageName
 ```
 
-List of all the API keys 
+List of all the API keys&#x20;
 
 ```
 aws apigateway get-api-keys --include-values
 ```
 
-Get the information about a specified API key 
+Get the information about a specified API key&#x20;
 
 ```
 aws apigateway get-api-key --api-key ApiKey
 ```
 
-## Containers Enumeration
+### Containers Enumeration
 
-Describe about  all the repositories in the container registry 
+Describe about  all the repositories in the container registry&#x20;
 
 ```
 aws ecr describe-repositories
 ```
 
-Get the information about repository policy 
+Get the information about repository policy&#x20;
 
 ```
 aws ecr get-repository-policy --repository-name RepositoryName
 ```
 
-Lists of all images in the specified repository 
+Lists of all images in the specified repository&#x20;
 
 ```
 aws ecr list-images  --repository-name RepositoryName
 ```
 
-Describe the information about a container image 
+Describe the information about a container image&#x20;
 
 ```
 aws ecr describe-images  --repository-name RepositoryName--image-ids imageTag=ImageTag
 ```
 
-Lists all ECS Clusters 
+Lists all ECS Clusters&#x20;
 
 ```
 aws ecs list-clusters
 ```
 
-Describe information about specified cluster 
+Describe information about specified cluster&#x20;
 
 ```
 aws ecs describe-clusters --cluster ClusterName
@@ -307,37 +306,37 @@ Lists all services in the specified cluster
 aws ecs list-services --cluster ClusterName
 ```
 
-Describe the information about  a specified service 
+Describe the information about  a specified service&#x20;
 
 ```
 aws ecs describe-services--cluster ClusterName--servicesServiceName
 ```
 
-Lists all tasks in the specified cluster 
+Lists all tasks in the specified cluster&#x20;
 
 ```
 aws ecs list-tasks --cluster ClusterName
 ```
 
-Describe the information about a specified task 
+Describe the information about a specified task&#x20;
 
 ```
 aws ecs describe-tasks  --cluster ClusterName--tasks TaskArn
 ```
 
-Lists all containers in the specified cluster 
+Lists all containers in the specified cluster&#x20;
 
 ```
 aws ecs list-container-instances --cluster Cluster-Name
 ```
 
-Lists all EKS Clusters 
+Lists all EKS Clusters&#x20;
 
 ```
 aws eks list-clusters
 ```
 
-Describe the information about a specified cluster 
+Describe the information about a specified cluster&#x20;
 
 ```
 aws eks describe-cluster --name Cluster-Name
@@ -349,27 +348,27 @@ List of all node groups in a specified cluster
 aws eks list-nodegroups--cluster-name Cluster-Name
 ```
 
-Describe the information about a specific node group in a cluster 
+Describe the information about a specific node group in a cluster&#x20;
 
 ```
 aws eks describe-nodegroup--cluster-name Cluster-Name--nodegroup-name Node-Group
 ```
 
-List of all fargate in a specified cluster 
+List of all fargate in a specified cluster&#x20;
 
 ```
 aws eks list-fargate-profiles --cluster-name Cluster-Name
 ```
 
-Describe the information about a specific fargate profile in a cluster 
+Describe the information about a specific fargate profile in a cluster&#x20;
 
 ```
 aws eks describe-fargate-profile --cluster-name Cluster-Name--fargate-profile-name Profile-Name
 ```
 
-## S3 Enumeration
+### S3 Enumeration
 
-List of all the buckets in the aws account  
+List of all the buckets in the aws account &#x20;
 
 ```
 aws s3api list-buckets
@@ -381,7 +380,7 @@ Get the information about specified bucket acls
 aws s3api get-bucket-acl --bucket bucket-name
 ```
 
-Get the information about specified bucket policy 
+Get the information about specified bucket policy&#x20;
 
 ```
 aws s3api get-bucket-policy --bucket bucket-name
@@ -393,13 +392,13 @@ Retrieves the Public Access Block configuration for an Amazon S3 bucket
 aws s3api get-public-access-block --bucket bucket-name
 ```
 
-List of all the objects in specified bucket  
+List of all the objects in specified bucket &#x20;
 
 ```
 aws s3api list-objects --bucket bucket-name
 ```
 
-Get the aclsinformation about specified object   
+Get the aclsinformation about specified object  &#x20;
 
 ```
 aws s3api get-object-acl--bucket bucket-name--key object-name
@@ -407,9 +406,9 @@ aws s3api get-object-acl--bucket bucket-name--key object-name
 
 Searching s3 buckets online for any organization. :
 
-https://buckets.grayhatwarfare.com/                                                                                                                                        
+https://buckets.grayhatwarfare.com/
 
-## AWS RDS Enumeration
+### AWS RDS Enumeration
 
 Describes the Information about the clusters in RDS
 
@@ -429,33 +428,33 @@ Describes the Information about the subnet groups in RDS
 aws rds describe-db-subnet-groups 
 ```
 
-Describes the Information about  the database security groups in RDS
+Describes the Information about  the database security groups in RDS
 
 ```
 aws rds describe-db-security-groups 
 ```
 
-Describes the Information about  the database proxies in RDS
+Describes the Information about  the database proxies in RDS
 
 ```
 aws rds describe-db-proxies 
 ```
 
-## EBS Enumeration
+### EBS Enumeration
 
-Describes the Information  about  EBS volumes 
+Describes the Information  about  EBS volumes&#x20;
 
 ```
 aws ec2 describe-volumes 
 ```
 
-Describes about all  the available EBS snapshots
+Describes about all  the available EBS snapshots
 
 ```
 aws ec2 describe-snapshots --owner-ids self
 ```
 
-## AWS Secret Manager Enumeration
+### AWS Secret Manager Enumeration
 
 Secret Manager
 
@@ -479,7 +478,7 @@ aws secretsmanager get-resource-policy --secret-id SecretID
 
 Key Management Server
 
-Lists of the all keys available in key management server (KMS) 
+Lists of the all keys available in key management server (KMS)&#x20;
 
 ```
 aws kms list-keys
@@ -491,34 +490,31 @@ Describes about specified key
 aws kms describe-key--key-id KeyID
 ```
 
-Lists of policies attached to specified key  
+Lists of policies attached to specified key &#x20;
 
 ```
 aws kms list-key-policies --key-id KeyID
 ```
 
-Get full information about a policy  
+Get full information about a policy &#x20;
 
 ```
 aws kms get-key-policy --policy-name policy-name--key-id key-id
 ```
 
-
-# Pacu 
+## Pacu
 
 ```
 am__enum_users_roles_policies_groups
 ```
 
-
-After that you can type 
+After that you can type
 
 ```
 data
 ```
 
-in order to see the results. 
-
+in order to see the results.
 
 For enumeration in databases
 
@@ -526,9 +522,7 @@ For enumeration in databases
 run dynamodb__enum
 ```
 
-
-Here is the list of all Pacu modules in order to do enumeration 
-
+Here is the list of all Pacu modules in order to do enumeration
 
 ```
 [Category: ENUM]
@@ -566,4 +560,3 @@ Here is the list of all Pacu modules in order to do enumeration
   lightsail__enum
   guardduty__list_findings
 ```
-
