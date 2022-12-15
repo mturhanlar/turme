@@ -10,27 +10,39 @@ run iam__bruteforce_permissions
 
 Lists all managed policies that are attached to the specified IAM user :
 
-`aws iam list-attached-user-policies --user-name user-name`
+```
+aws iam list-attached-user-policies --user-name user-name
+```
 
 Retrieves information about the specified managed policy : 
 
-`aws iam get-policy --policy-arn policy-arn`
+```
+aws iam get-policy --policy-arn policy-arn
+```
 
 Lists information about the versions of the specified managed policy :
 
-`aws iam list-policy-versions --policy-arn policy-arn`
+```
+aws iam list-policy-versions --policy-arn policy-arn
+```
 
 Retrieves information about the specified version of the specified managed policy :
 
-`aws iam get-policy-version --policy-arn policy-arn--version-id version-id`
+```
+aws iam get-policy-version --policy-arn policy-arn--version-id version-id
+```
 
 Add an inline policy document that is embedded in the specified IAM user :
 
-`aws iam put-user-policy --user-name Username--Policy-name PolicyName--policy-document file://Policy.json`
+```
+aws iam put-user-policy --user-name Username--Policy-name PolicyName--policy-document file://Policy.json
+```
 
 Lists the names of the inline policies embedded in the specified IAM user :
 
-`aws iam list-user-policies --user-name user-name`
+```
+aws iam list-user-policies --user-name user-name
+```
 
 
 [AWS IAM Privilege Escalation – Methods and Mitigation](https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation/)
