@@ -26,7 +26,6 @@ git clone https://github.com/kgretzky/evilginx2.git
 cd evilginx2
 make
 make install
-evilginx
 ```
 
 &#x20;Now you should not run evilginx because we didn't configure our DNS.&#x20;
