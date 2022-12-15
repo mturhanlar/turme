@@ -86,9 +86,7 @@ After these configurations run your evilginx with debug because I was not able t
 
 
 
-
-
-run these commands for&#x20;
+run these commands for running evilginx in debug mode.&#x20;
 
 ```
 evilginx -debug
@@ -113,11 +111,11 @@ lures get-url #putIDthere
 
 After getting the URL from evilginx open an incognito browser and test.&#x20;
 
-In my case, evilginx was not able to save tokens of my victims. But in debug mode, I was able to see these tokens.&#x20;
+In my case, evilginx was not able to save tokens of my victims(my account here). But in debug mode, I was able to see these tokens.&#x20;
 
-For o365 phishlet,&#x20;
 
-you need to sniff these tokens&#x20;
+
+For o365 phishlet, you need to sniff these tokens&#x20;
 
 ```
 ESTSAUTHPERSISTENT
@@ -130,21 +128,13 @@ SignInStateCookie
 
 
 
-After taking these values go to browser and with cookie editor extension change these while trying to login [https://www.office.com/?auth=2](https://www.office.com/?auth=2)
-
-and refresh the page.&#x20;
-
-
+After taking these values go to your browser and with cookie editor extension change these while trying to login [https://www.office.com/?auth=2](https://www.office.com/?auth=2) and refresh the page.&#x20;
 
 You are in.&#x20;
-
-
 
 ```
 Please use it for testing purposes. 
 ```
-
-``
 
 
 
