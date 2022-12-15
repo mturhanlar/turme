@@ -6,7 +6,7 @@ Pacu tool
 run iam__bruteforce_permissions
 ```
 
-## AM Privilege Escalation
+## IAM Privilege Escalation
 
 Lists all managed policies that are attached to the specified IAM user :
 
@@ -58,24 +58,34 @@ Lists the names of the inline policies embedded in the specified IAM user :
 
 Get Information about user identity / role identity   :
 
-`aws sts get-caller-identity`  
+```
+aws sts get-caller-identity
+```
 
 Lists all managed policies that are attached to the specified IAM user :
 
-`aws iam list-attached-user-policies --user-name user-name`
+```
+aws iam list-attached-user-policies --user-name user-name
+```
 
 Retrieves information about the specified version of the specified managed policy :
 
-`aws iam get-policy-version --policy-arnpolicy-arn--version-id version-id`
+```
+aws iam get-policy-version --policy-arnpolicy-arn--version-id version-id
+```
 
 Get-Information about instance id  :
 
-`curl http://169.254.169.254/latest/meta-data/instance-id`  
-
+```
+curl http://169.254.169.254/latest/meta-data/instance-id
+```
 Lists the instance profiles :
 
-`aws iam list-instance-profiles`
-
+```
+aws iam list-instance-profiles
+```
 Attach an instance profile with a role to a EC2 instance: : 
 
-`aws ec2 associate-iam-instance-profile --instance-id InstanceID --iam-instance-profile Name=ProfileName`
+```
+aws ec2 associate-iam-instance-profile --instance-id InstanceID --iam-instance-profile Name=ProfileName
+```
