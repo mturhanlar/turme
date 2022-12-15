@@ -47,3 +47,7 @@ $UserRoles | ?{$_.MemberType -eq "ServicePrincipal"}
 
 If you have dynamic groups Implementation, than it would be good to examine all groups constructor scripts. So with that examination you will ba able fjn
 [you should see that](https://www.mnemonic.io/resources/blog/abusing-dynamic-groups-in-azure-ad-for-privilege-escalation/)
+
+```
+Here you can write your codes
+```
