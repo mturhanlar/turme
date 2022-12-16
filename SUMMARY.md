@@ -9,6 +9,7 @@
   * [Enumeration](azure-ad-penetration-test/enumeration.md)
   * [Privilege Escalation](azure-ad-penetration-test/privilege-escalation.md)
 * [AWS Penetration Test](aws-penetration-test/README.md)
+  * [Tools](aws-penetration-test/tools.md)
   * [Intro](aws-penetration-test/intro.md)
   * [Enumeration](aws-penetration-test/enumeration.md)
   * [Initial Access](aws-penetration-test/initial-access.md)
