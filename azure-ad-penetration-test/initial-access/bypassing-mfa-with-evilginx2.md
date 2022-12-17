@@ -42,7 +42,7 @@ From that section go to DNS configuration place.&#x20;
 
 Then Manage DNS section.&#x20;
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (2).png>)
 
 Put there the subdomains that you want to use. Actually, it depends on which phishlets you will use. But in my case I have used o365 phishlet so, I have added to there `account` and `login`. &#x20;
 
@@ -123,7 +123,7 @@ ESTSAUTHLIGHT
 SignInStateCookie
 ```
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 
 
