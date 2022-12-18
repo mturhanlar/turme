@@ -7,6 +7,7 @@ Install AADInternals
 ```
 Set-ExecutionPolicy Unrestricted
 ```
+
 Install the module
 
 ```
@@ -112,14 +113,15 @@ Get-AzureADUser -SearchString "admin"
 ```
 
 Search for users who contain the word "admin" in their Display name:
+
 ```
 Get-AzureADUser-All $true|?{$_.Displayname -match "admin"}
 ```
+
 List all the attributes for a user
 
 ```
 Get-AzureADUser-ObjectId [MAIL] | fl * 
-
 Get-AzureADUser-ObjectId [MAIL] |%{$_.PSObject.Properties.Name}
 ```
 
@@ -145,6 +147,7 @@ Objects created by any user (use -ObjectIdfor a specific user)
 ```
 Get-AzureADUser | Get-AzureADUserCreatedObject
 ```
+
 Objects owned by a specific user
 
 ```
