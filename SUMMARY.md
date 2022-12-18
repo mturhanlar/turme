@@ -1,6 +1,7 @@
 # Table of contents
 
 * [whoami](README.md)
+* [PowerShell for Pentesters](powershell-for-pentesters.md)
 * [Azure AD Penetration Test](azure-ad-penetration-test/README.md)
   * [Intro](azure-ad-penetration-test/intro.md)
   * [Initial Access](azure-ad-penetration-test/initial-access/README.md)
