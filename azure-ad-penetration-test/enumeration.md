@@ -9,7 +9,9 @@ Set-ExecutionPolicy Unrestricted
 ```
 Install the module
 
+```
 Install-Module AADInternals
+```
 
 Import the module
 
