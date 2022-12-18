@@ -276,44 +276,43 @@ AzureAD Apps
 Get all the application objects registered with the current tenant (visible in App Registrations in Azure portal). An application object is the global representation of an app.
 
 
-```
+
 Get-AzureADApplication -All $true
-```
+
 
 
 Get all details about an application
 
 
-```
+
 Get-AzureADApplication -ObjectId [ID NO]  | fl *
-```
+
 
 Get an application based on the display name
 
-```
+
 Get-AzureADApplication -All $true | ?{$_.DisplayName-match"app"}
-```
 
 
 The  Get-AzureADApplicationPasswordCredential will show the applications with an application password but the password value is not shown.
 
 Get the owner of an application
 
-```
+
 Get-AzureADApplication -ObjectId [ID NO] | Get-AzureADApplicationOwner | fl * 
-```
+
 
 Get Apps where a User has a role (exact role is not shown)
 
-```
+
 Get-AzureADUser-ObjectId [MAIL] |Get-AzureADUserAppRoleAssignment | fl *
-```
+
 
 Get Apps where a Group has a role (exact role is not shown)
 
-```
+
 Get-AzureADGroup -ObjectId [ID NO] | Get-AzureADGroupAppRoleAssignment | fl *
-```
+
 
 AzureAD Service Principals
 
@@ -323,47 +322,47 @@ The service principal is a local representation for an app in a specific tenant 
 
 Get all service principals
 
-```
+
 Get-AzureADServicePrincipal -All $true
-```
+
 
 Get all details about a service principal
 
-```
+
 Get-AzureADServicePrincipal -ObjectId [ID NO]  | fl *
-```
+
 
 Get a service principal based on the display name
 
-```
+
 Get-AzureADServicePrincipal-All$true|?{$_.DisplayName-match"app"}
-```
+
 
 Get the owner of a service principal
 
-```
+
 Get-AzureADServicePrincipal-ObjectId [ID no] | Get-AzureADServicePrincipalOwner | fl *
-```
+
 
 Get objects owned by a service principal
 
-```
+
 Get-AzureADServicePrincipal-ObjectId [ID no] | Get-AzureADServicePrincipalOwnedObject
-```
+
 
 Get objects created by a service principal
 
-```
+
 Get-AzureADServicePrincipal-ObjectId cdddd16e-2611-4442-8f45-234rwf234 | Get-AzureADServicePrincipalCreatedObject
-```
+
 
 Get group and role memberships of a service principal
 
-```
-Get-AzureADServicePrincipal -ObjectId [ID no] | Get-AzureADServicePrincipalMembership | fl *
-```
 
-```
+Get-AzureADServicePrincipal -ObjectId [ID no] | Get-AzureADServicePrincipalMembership | fl *
+
+
+
 Get-AzureADServicePrincipal | Get-AzureADServicePrincipalMembership
-```
+
 
