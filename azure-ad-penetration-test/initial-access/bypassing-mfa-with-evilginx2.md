@@ -42,7 +42,7 @@ From that section go to DNS configuration place.&#x20;
 
 Then Manage DNS section.&#x20;
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (2).png>)
 
 Put there the subdomains that you want to use. Actually, it depends on which phishlets you will use. But in my case I have used o365 phishlet so, I have added to there `account` and `login`. &#x20;
 
@@ -54,7 +54,7 @@ After adding these we need to implement our nameserver glue records.&#x20;
 
 From that section you need to put your domain name records.&#x20;
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 
 

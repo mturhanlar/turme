@@ -4,7 +4,7 @@
 
 &#x20;
 
-<img src="../../.gitbook/assets/image.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (9).png" alt="" data-size="original">
 
 The basic idea to utilize device code authentication for phishing is the following.
 
