@@ -50,7 +50,7 @@ And your EC2 instance public IP that you will use.&#x20;
 
 After adding these we need to implement our nameserver glue records.&#x20;
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)
 
 From that section you need to put your domain name records.&#x20;
 
