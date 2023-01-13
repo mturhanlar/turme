@@ -1,8 +1,8 @@
 ---
 description: >-
-  There is a picture which is created by Obsidian mindset plugin and also
-  markdown text of that. You can basically copy and paste to your own obsidian
-  vault and continue to recreate that.
+  There is a picture which is created by Obsidian (Enhancing Mindmap)plugin and
+  also markdown text of that. You can basically copy and paste to your own
+  obsidian vault and continue to recreate that.
 ---
 
 # Intro \[WIP]
