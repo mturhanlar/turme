@@ -38,7 +38,6 @@ Get tenant domains
 Get-AADIntTenantDomains -Domain yourdomain.com 
 ```
 
-
 Get all the information
 
 ```
@@ -82,7 +81,7 @@ $passwd=ConvertTo-SecureString"[PASSWORD]" -AsPlainText -Force
 $creds=New-ObjectSystem.Management.Automation.PSCredential("[DOMAIN]",$passwd) 
 
 Connect-AzureAD -Credential $creds
-``` 
+```
 
 Get the current session state
 
@@ -95,7 +94,6 @@ Get details of the current tenant
 ```
 Get-AzureADTenantDetail
 ```
-
 
 AzureAD Users
 
@@ -130,6 +128,7 @@ Search attributes for all users that contain the string "password":
 ```
 Get-AzureADUser -All $true |%{$Properties=$;$Properties.PSObject.Properties.Name|%{if($Properties.$-match'password') {"$($Properties.UserPrincipalName)-$-$($Properties.$)"}}}
 ```
+
 All users who are synced from on-prem
 
 ```
@@ -173,6 +172,7 @@ Search for a groupbased on string in first characters of DisplayName(wildcard no
 ```
 Get-AzureADGroup -SearchString "admin" | fl * 
 ```
+
 To search for groups which contain the word "admin" in their name:
 
 ```
@@ -209,6 +209,8 @@ Get groups and roles where the specified user is a member
 Get-AzureADUser-SearchString'test'|Get-AzureADUserMembership
 Get-AzureADUserMembership -ObjectId unsecure@yourdomain.com
 
+```
+
 AzureAD Role
 
 Get all available role templates
@@ -218,6 +220,7 @@ Get-AzureADDirectoryroleTemplate
 ```
 
 Get all roles
+
 ```
 Get-AzureADDirectoryRole
 ```
@@ -235,7 +238,7 @@ AzureAD Devices
 Get all Azure joined and registered devices
 
 ```
-Get-AzureADDevice -All $true | fl * 
+Get-AzureADDevice -All $true | fl *
 ```
 
 Get the device configuration object (note the RegistrationQuotain the output)
@@ -248,6 +251,8 @@ List Registered owners of all the devices
 
 ```
 Get-AzureADDevice -All $true |Get-AzureADDeviceRegisteredOwner
+
+
 ```
 
 List Registered users of all the devices
@@ -259,19 +264,25 @@ Get-AzureADDevice -All $true | Get-AzureADDeviceRegisteredUser
 List devices owned by a user
 
 ```
-Get-AzureADUserOwnedDevice -ObjectId [MAIL] 
+Get-AzureADUserOwnedDevice -ObjectId [MAIL]
 ```
 
 List devices registered by a user
 
 ```
-Get-AzureADUserRegisteredDevice -ObjectId [MAIL]  
+Get-AzureADUserRegisteredDevice -ObjectId [MAIL]
 ```
 
 List devices managed using Intune
 
 ```
 Get-AzureADDevice -All $true |?{$_.IsCompliant-eq"True"}
+```
+
+
+
+
+
 ```
 
 AzureAD Apps
@@ -369,3 +380,4 @@ Get-AzureADServicePrincipal -ObjectId [ID no] | Get-AzureADServicePrincipalMembe
 Get-AzureADServicePrincipal | Get-AzureADServicePrincipalMembership
 
 
+```
