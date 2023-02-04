@@ -137,3 +137,12 @@ Please use it for testing purposes.
 
 
 
+On defending side, By using yubikey it is possible to stop these kinds of phishing attacks. During phishing, user will see that kind of a screen if he/she using the yubikey.&#x20;
+
+
+
+![](../../.gitbook/assets/image.png)&#x20;
+
+And later, it will throw an error like that shown below.&#x20;
+
+![](<../../.gitbook/assets/image (10).png>)
