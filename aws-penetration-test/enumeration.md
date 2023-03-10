@@ -6,6 +6,14 @@
 
 By giving the name of the company or organization it provides results related to that organization with AWS, Azure, and Google Cloud checks.
 
+```
+./cloud_enum.py -k <company> -k <company web site> -k <company product names>
+```
+
+{% embed url="https://github.com/darkbitio/aws-recon" %}
+
+###
+
 ###
 
 ### IAM Enumeration
