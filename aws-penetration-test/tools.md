@@ -55,3 +55,7 @@ some refences:
 * [https://github.com/nccgroup/PMapper/wiki/Query-Reference](https://github.com/nccgroup/PMapper/wiki/Query-Reference)&#x20;
 * [https://securityonline.info/pmapper/?utm\_content=cmp-true](https://securityonline.info/pmapper/?utm\_content=cmp-true)
 * [https://www.kitploit.com/2018/08/pmapper-tool-for-quickly-evaluating-iam.html?m=0](https://www.kitploit.com/2018/08/pmapper-tool-for-quickly-evaluating-iam.html?m=0)
+
+## Links
+
+[https://github.com/toniblyx/my-arsenal-of-aws-security-tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)
