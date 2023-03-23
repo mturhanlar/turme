@@ -42,7 +42,7 @@ Our goal for doing the Purple Team exercise is:
 
 ## Purple Team Exercise Framework <a href="#purple-team-exercise-framework" id="purple-team-exercise-framework"></a>
 
-&#x20;![](<../.gitbook/assets/image (5).png>)
+&#x20;
 
 ## Methodology Description <a href="#methodology-description" id="methodology-description"></a>
 
