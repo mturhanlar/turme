@@ -171,12 +171,12 @@ In that phase, we should schedule a meeting, talk and decide on the following qu
 
 
 
-| **Title**                              | **Role**         | **Responsibility**                                                                   |
-| -------------------------------------- | ---------------- | ------------------------------------------------------------------------------------ |
-| Head of Security                       | Sponsor/Attendee | Approve Purple Team Exercise                                                         |
-| SOC Team Manager(Exercise Coordinator) | Sponsor/Attendee | Preparation: Defining goals for both Red and Blue teams, Select Attendees            |
-| Red Team                               | Attendee         | Coordinating TTPs during the Cyber Threat Intelligence phase, Preparation, Execution |
-| Blue Team - SOC                        | Attendee         | Coordinating TTPs during the Cyber Threat Intelligence phase, Preparation, Execution |
+| **Title**                   | **Role**         | **Responsibility**                                                                   |
+| --------------------------- | ---------------- | ------------------------------------------------------------------------------------ |
+| CISO/CTO/Security Team Lead | Sponsor/Attendee | Approve Purple Team Exercise                                                         |
+| SOC Team Manager            | Sponsor/Attendee | Preparation: Defining goals for both Red and Blue teams, Select Attendees            |
+| Red Team                    | Attendee         | Coordinating TTPs during the Cyber Threat Intelligence phase, Preparation, Execution |
+| Blue Team - SOC             | Attendee         | Coordinating TTPs during the Cyber Threat Intelligence phase, Preparation, Execution |
 
 ## Tools in Purple Team Exercise <a href="#tools-in-purple-team-exercise" id="tools-in-purple-team-exercise"></a>
 
