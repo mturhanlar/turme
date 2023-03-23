@@ -38,7 +38,7 @@ Let's turn back to our freenom.com page and manage our domain.&#x20;
 
 From that section go to DNS configuration place.&#x20;
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (5) (1).png>)
 
 Then Manage DNS section.&#x20;
 
