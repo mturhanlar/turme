@@ -140,3 +140,8 @@ Then in new terminal&#x20;
 
 `insmod reverse-shell.ko`
 
+
+
+## cap\_dac\_read\_search capability
+
+The `cap_dac_read_search` capability is important because it controls a process's ability to read and search directories/files with discretionary access control (DAC) permissions. DAC permissions determine who can access and modify specific files and directories on a system.
