@@ -145,3 +145,34 @@ Then in new terminal&#x20;
 ## cap\_dac\_read\_search capability
 
 The `cap_dac_read_search` capability is important because it controls a process's ability to read and search directories/files with discretionary access control (DAC) permissions. DAC permissions determine who can access and modify specific files and directories on a system.
+
+```
+capsh --print
+```
+
+Later check for cap\_dac\_read\_search capability. ([https://medium.com/@fun\_cuddles/docker-breakout-exploit-analysis-a274fff0e6b3](https://medium.com/@fun\_cuddles/docker-breakout-exploit-analysis-a274fff0e6b3))
+
+We should use that c code, [http://stealth.openwall.net/xSports/shocker.c](http://stealth.openwall.net/xSports/shocker.c)
+
+Check also is there any `.dockerinit` file exist.&#x20;
+
+Look which disks are mounted. `mount`
+
+* If there is /etc/ directories mounted change in exploit int main() section and add there these directories.&#x20;
+
+after adding these by using gcc compile the code.&#x20;
+
+
+
+So by that you can read shadow file of the host machine. Maybe SSH files or ssh config files of host machine can be read also.&#x20;
+
+
+
+## Network namespaces
+
+
+
+
+
+
+
