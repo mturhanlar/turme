@@ -168,7 +168,7 @@ So by that you can read shadow file of the host machine. Maybe SSH files or ssh 
 
 
 
-## Network namespaces
+##
 
 
 
