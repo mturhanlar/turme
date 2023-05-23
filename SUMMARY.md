@@ -19,6 +19,7 @@
   * [Intro](purple-team-exercise/intro.md)
 * [Container Security](container-security/README.md)
   * [Container Breakouts](container-security/container-breakouts.md)
-  * [Docker Basic Commands](container-security/docker-basic-commands.md)
+  * [Docker Basic Commands](container-security/docker-basic-commands/README.md)
+    * [Docker-Related Attack Vectors](container-security/docker-basic-commands/docker-related-attack-vectors.md)
   * [Podman Basic Commands](container-security/podman-basic-commands.md)
   * [Multi Container Setup](container-security/multi-container-setup.md)
