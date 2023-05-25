@@ -141,7 +141,7 @@ On defending side, By using yubikey it is possible to stop these kinds of phishi
 
 
 
-![](../../.gitbook/assets/image.png)&#x20;
+![](<../../.gitbook/assets/image (2).png>)&#x20;
 
 And later, it will throw an error like that shown below.&#x20;
 

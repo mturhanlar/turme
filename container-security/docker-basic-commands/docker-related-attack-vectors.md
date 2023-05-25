@@ -10,3 +10,15 @@
     * `cd /host/`
     * `chroot ./ bash`
     * `find / -name password`
+
+
+
+### Portainer Web UI access
+
+* If you have portainer access, (via leaked creds or bruteforce)
+  * Create privileged docker via portainer web UI&#x20;
+  * Later connect there via from web ui of portainer:
+    * `mount /dev/sda /mnt`
+    * `cd /mnt`
+    * `chroot ./ bash`
+    * Then find credentials in root mounted&#x20;
