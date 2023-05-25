@@ -121,14 +121,15 @@ module_exit(reverse_shell_exit);
 
 Then we should create a Makefile to compile kernel module.&#x20;
 
-```
+````
+```makefile
 obj-m +=reverse-shell.o
 all:
-    make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 clean:
-    make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
-
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 ```
+````
 
 Make the kernel module.
 
