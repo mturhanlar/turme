@@ -25,3 +25,4 @@
   * [Container Breakouts](container-security/container-breakouts/README.md)
     * [Containerd Attacks](container-security/container-breakouts/containerd-attacks.md)
   * [Multi Container Setup](container-security/multi-container-setup.md)
+  * [Securing Docker](container-security/securing-docker.md)
