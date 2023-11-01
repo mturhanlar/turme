@@ -4,7 +4,7 @@ description: I love computers and I love learning new stuff.
 
 # whoami
 
-LFCS / LFCE / CEH / OSCP / Azure Security Engineer
+LFCS / LFCE / CEH / OSCP / CRTO
 
 Learning addict
 
