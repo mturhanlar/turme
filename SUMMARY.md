@@ -8,6 +8,7 @@
     * [Bypassing MFA with Evilginx2](azure-ad-penetration-test/initial-access/bypassing-mfa-with-evilginx2.md)
   * [Enumeration](azure-ad-penetration-test/enumeration.md)
   * [Privilege Escalation](azure-ad-penetration-test/privilege-escalation.md)
+  * [Tools](azure-ad-penetration-test/tools.md)
 * [AWS Penetration Test](aws-penetration-test/README.md)
   * [Intro \[WIP\]](aws-penetration-test/intro.md)
   * [Enumeration](aws-penetration-test/enumeration.md)
